@@ -1,0 +1,8 @@
+* Tentative Plan :-
+->Tasks :
+i) Deciding on most accurate Micro-services architecture..
+ii) Deciding on most apt mongoDb collections schema for various collections required at back-end..
+iii) Coding the back-end API covering all required web services that might be needed for business logic..
+iv) Designing front-end with material ui and redux..
+v) Setting up gateway api and communication links between back-end and front-end..
+vi) Deploying the web app successfully..

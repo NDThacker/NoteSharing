@@ -1,0 +1,113 @@
+Tasks :-
+
+=> Micro services architecture
+
+->UserService
+->ProductService
+->OrderService
+
+//Please go through the schemas,, Any suggestion or corrections are welcomed.. 
+i) UserService
+
+Db: UserDb
+Collections:
+    
+	Customer = [{
+		cid: "C1001",
+		cemail: "",
+		cpass: "",
+		phoneNo: 00,
+		address: ""
+	}]
+	Seller = [{
+		sid: "S1001",
+		semail: "",
+		spass: "",
+		phoneNo: 00,
+		address: "",
+		GSTIN: "",
+		TAN_No: ""
+				
+	}]
+
+ii) ProductService
+
+Db: ProductDb
+Collections:
+
+Products = [{
+	pid: "P1001",
+	category ; {
+		main : "",
+		sub: ""
+	}
+	pname: "",
+	sid: "S1001",
+	imgsrc: "assets/p1001img1.jpg",
+	price: 3000,
+	discount: 11,
+	stock: 9,
+	details: "",
+	reviews: [
+		{
+			cid: "C1001",
+			comment: "Nice product",
+			rating: 4.2
+		},
+		{
+			cid: "C1005",
+			comment: "",
+			rating: 4.0
+		}
+	]
+}]
+
+iii) OrderService
+
+Db: OrderDb
+Collections:
+
+Orders = [{
+	cid: "C1006",
+	oid: "O1006",
+	status: "Delivered",
+	payAmount: 2350,
+	payMethod: "OnlinePaid"
+	purchase: [
+		{
+			pid: "P1005",
+			count: 2
+		},
+		{
+			pid: "P1007",
+			count: 1	
+		}
+	]
+},
+{
+	cid: "C1009",
+	oid: "O1102",
+	status: "Placed",
+	payAmount: 1250,
+	payMethod: "CashOnDelivery"
+	purchase: [
+		{
+			pid: "P1008",
+			count: 2
+		},
+		{
+			pid: "P1002",
+			count: 1	
+		}
+	]
+}]
+
+Carts = [{
+	cid: "C1111",
+	prod: [
+		{
+			pid: "P1234",
+			count: 2
+		}
+	]
+}]
