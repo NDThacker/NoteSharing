@@ -1,2 +1,2 @@
 # NoteSharing
-FA4 project
+JS PRoject
